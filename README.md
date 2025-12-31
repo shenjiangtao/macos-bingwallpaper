@@ -10,13 +10,7 @@ Bing 壁纸会下载到 ~/.local/bing-wallpaper-macos 目录。
 
 📥 安装
 Homebrew
-zsh
-brew tap moesnow/tools
-brew install bing-wallpaper-macos
 🚀 使用方法
-自动更新壁纸
-zsh
-brew services start bing-wallpaper-macos
 手动更新壁纸
 zsh
 bing-wallpaper-macos
@@ -32,7 +26,7 @@ Options:
 
 zsh
 sudo cp bing-wallpaper-macos /usr/local/bin/
-sudo chown $USER:staff /usr/local/bin/bing-wallpaper-macos
+sudo chown "$USER":staff /usr/local/bin/bing-wallpaper-macos
 chmod +x /usr/local/bin/bing-wallpaper-macos
 创建 plist 文件 ~/Library/LaunchAgents/com.bing.wallpaper.plist：
 
@@ -93,7 +87,7 @@ make
 解决方法：
 
 zsh
-sudo chown $USER:staff /usr/local/bin/bing-wallpaper-macos
+sudo chown "$USER":staff /usr/local/bin/bing-wallpaper-macos
 chmod +x /usr/local/bin/bing-wallpaper-macos
 plutil -lint ~/Library/LaunchAgents/com.bing.wallpaper.plist
 2. Load failed: 5: Input/output error

@@ -10,13 +10,7 @@ Old wallpaper files older than 30 days will be removed automatically.
 
 📥 Installation
 Homebrew
-zsh
-brew tap moesnow/tools
-brew install bing-wallpaper-macos
 🚀 Usage
-Automatically update wallpapers
-zsh
-brew services start bing-wallpaper-macos
 Manually update wallpapers
 zsh
 bing-wallpaper-macos
@@ -32,7 +26,7 @@ Copy binary to /usr/local/bin:
 
 zsh
 sudo cp bing-wallpaper-macos /usr/local/bin/
-sudo chown $USER:staff /usr/local/bin/bing-wallpaper-macos
+sudo chown "$USER":staff /usr/local/bin/bing-wallpaper-macos
 chmod +x /usr/local/bin/bing-wallpaper-macos
 Create plist file at ~/Library/LaunchAgents/com.bing.wallpaper.plist:
 
@@ -83,7 +77,7 @@ launchctl enable gui/$(id -u)/com.bing.wallpaper
 🛠 Compilation
 zsh
 brew install nlohmann-json
-git clone https://github.com/moesnow/bing-wallpaper-macos
+git clone https://github.com/shenjiangtao/macos-bingwallpaper.git
 cd bing-wallpaper-macos
 make
 🐞 Troubleshooting
@@ -93,7 +87,7 @@ Cause: Program path invalid, file not executable, wrong owner, or log path not w
 Fix:
 
 zsh
-sudo chown $USER:staff /usr/local/bin/bing-wallpaper-macos
+sudo chown "$USER":staff /usr/local/bin/bing-wallpaper-macos
 chmod +x /usr/local/bin/bing-wallpaper-macos
 plutil -lint ~/Library/LaunchAgents/com.bing.wallpaper.plist
 2. Load failed: 5: Input/output error

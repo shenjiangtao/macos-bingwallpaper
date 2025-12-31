@@ -1,6 +1,7 @@
 # Compiler and compilation options
 # 编译器和编译选项
-CC = g++-14
+CC = clang++
+# g++-14
 CFLAGS = -Wall -Werror -std=c++17 -I.
 LIBS = -lcurl
 
