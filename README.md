@@ -6,7 +6,7 @@ Bing 壁纸会下载到 ~/.local/bing-wallpaper-macos 目录。
 
 最近一次更新日期会记录在该目录。
 
-超过 30 天的旧壁纸文件会自动删除。
+超过 365 天的旧壁纸文件会自动删除。
 
 📥 安装
 Homebrew
@@ -83,7 +83,7 @@ launchctl enable gui/$(id -u)/com.bing.wallpaper
 🛠 编译
 zsh
 brew install nlohmann-json
-git clone https://github.com/moesnow/bing-wallpaper-macos
+git clone https://github.com/shenjiangtao/macos-bingwallpaper.git
 cd bing-wallpaper-macos
 make
 🐞 常见问题排查
